@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Hillel;
 
 import java.util.InputMismatchException;
 import java.util.Locale;

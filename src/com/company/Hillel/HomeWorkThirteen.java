@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Hillel;
 
 import java.util.Arrays;
 import java.util.Random;
