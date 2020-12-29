@@ -37,7 +37,7 @@ public class Box {
 
     public void setHeight(int height) {
         if (height <= 0) {
-            System.out.println("Это значение не может быть устновлено");
+            System.out.println("Это значение не может быть установлено!");
         } else {
             this.height = height;
         }
@@ -49,7 +49,7 @@ public class Box {
 
     public void setWidth(int width) {
         if (width <= 0) {
-            System.out.println("Это значение не может быть устновлено");
+            System.out.println("Это значение не может быть установлено!");
         } else {
             this.width = width;
         }
@@ -61,7 +61,7 @@ public class Box {
 
     public void setLength(int length) {
         if (length <= 0) {
-            System.out.println("Это значение не может быть устновлено");
+            System.out.println("Это значение не может быть установлено!");
         } else {
             this.length = length;
         }
