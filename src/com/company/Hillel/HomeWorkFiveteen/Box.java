@@ -6,7 +6,7 @@ public class Box {
     private int width;
     private int length;
     private String material = "wood"; //default material
-    private String color = "pink"; //default color
+    private String color = "pink";  //default color
 
     public Box() {
         //Object with default values
