@@ -6,8 +6,25 @@ public class ColorBox extends Box {
     public ColorBox() {
     }
 
+    public ColorBox(Material material) {
+        super(material);
+    }
+
     public ColorBox(Color color) {
         this.color = color;
+    }
+
+    public ColorBox(Material material, Color color) {
+        super(material);
+        this.color = color;
+    }
+
+    public ColorBox(int height, int width, int length) {
+        super(height, width, length);
+    }
+
+    public ColorBox(int height, int width, int length, Material material) {
+        super(height, width, length, material);
     }
 
     public ColorBox(int height, int width, int length, Color color) {
@@ -30,6 +47,6 @@ public class ColorBox extends Box {
 
     @Override
     public String toString() {
-        return super.toString() + "\nЦвет: " + color;
+        return super.toString() + "Цвет: " + color + "\n";
     }
 }

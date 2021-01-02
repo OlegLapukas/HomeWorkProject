@@ -13,6 +13,10 @@ public class Box {
         //Object with default values
     }
 
+    public Box(Material material) {
+        this.material = material;
+    }
+
     public Box(int height, int width, int length) {
         if (height <= 0 || width <= 0 || length <= 0) {
             System.out.println("Значения для коробки не могут быть меньше либо равны нулю!" +
