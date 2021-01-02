@@ -4,6 +4,7 @@ public class ColorBox extends Box {
     private Color color = Color.GREY; //default color
 
     public ColorBox() {
+        //Object with default values
     }
 
     public ColorBox(Material material) {

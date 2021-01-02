@@ -52,5 +52,11 @@ public class TestBox {
         ColorBox colorBox7 = new ColorBox(10, 20, 10, Material.IRON , Color.ORANGE);
         System.out.printf(line, colorBox7.volume());
         System.out.println(colorBox7);
+
+        ColorBox colorBox8 = new ColorBox();
+        colorBox8.setColor(Color.BLUE);
+        colorBox8.setMaterial(Material.IRON);
+        System.out.printf(line, colorBox8.volume());
+        System.out.println(colorBox8);
     }
 }
