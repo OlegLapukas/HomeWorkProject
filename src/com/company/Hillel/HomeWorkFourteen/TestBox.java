@@ -24,7 +24,7 @@ public class TestBox {
         System.out.printf(line, unusualBox.volume());
         System.out.println(unusualBox);
 
-        Box box = new Box(5,5,5);
+        Box box = new Box(5, 5, 5);
         System.out.printf(line, box.volume());
         System.out.println(box);
 

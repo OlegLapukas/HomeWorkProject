@@ -7,8 +7,7 @@ public class Box {
     private int width = 50;
     private int length = 50;
 
-    private String material = "дерево"; //default material
-    private String color = "розовый"; //default color
+    private Material material = Material.WOOD; //default material
 
     public Box() {
         //Object with default values
@@ -25,10 +24,9 @@ public class Box {
         }
     }
 
-    public Box(int height, int width, int length, String material, String color) {
+    public Box(int height, int width, int length, Material material) {
         this(height, width, length);
         this.material = material;
-        this.color = color;
     }
 
     public int getHeight() {
@@ -67,20 +65,12 @@ public class Box {
         }
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(Material material) {
         this.material = material;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public double volume() {
@@ -93,7 +83,6 @@ public class Box {
                 "высота: %d%n" +
                 "ширина: %d%n" +
                 "длинна: %d%n" +
-                "Материал: %s%n" +
-                "Цвет: %s%n", height, width, length, material, color);
+                "Материал: %s%n", height, width, length, material);
     }
 }
