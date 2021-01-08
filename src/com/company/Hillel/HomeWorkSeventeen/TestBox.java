@@ -58,5 +58,12 @@ public class TestBox {
         colorBox8.setMaterial(Material.IRON);
         System.out.printf(line, colorBox8.volume());
         System.out.println(colorBox8);
+
+        Warehouse w = new Warehouse(10);
+        w.addBox(colorBox8);
+        w.addBox(colorBox8);
+        w.addBox(null);
+
+        System.out.println(w);
     }
 }
