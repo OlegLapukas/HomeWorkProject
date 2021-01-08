@@ -3,6 +3,8 @@ package com.company.Hillel.HomeWorkSeventeen;
 import java.util.Arrays;
 
 public class Warehouse {
+
+    private final String line = "Объём коробки равен = %.4f м³.%n";
     Box[] boxes;
     private int count = 0;
 
@@ -22,10 +24,11 @@ public class Warehouse {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Содержимое склада:\n");
-        for (Box box : boxes) {
-            if (box != null) {
-                sb.append(box);
-                sb.append("\n");
+        for (int i = 0; i < boxes.length; i++) {
+            if (boxes[i] != null) {
+                sb.append("Коробка хранится в ячейке:").append(i).append("\n");
+                sb.append(String.format("Объём коробки равен = %.4f м³.%n", boxes[i].volume()));
+                sb.append(boxes[i]).append("\n");
             }
         }
         return sb.toString();
