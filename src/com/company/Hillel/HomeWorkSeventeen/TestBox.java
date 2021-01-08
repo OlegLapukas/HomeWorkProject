@@ -4,6 +4,7 @@ public class TestBox {
 
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse(15);
+        System.out.println(warehouse); //warehouse is empty
 
         Box box = new Box();
         warehouse.addBox(box);
@@ -11,11 +12,16 @@ public class TestBox {
         Box box1 = new Box(Material.ALUMINUM);
         warehouse.addBox(box1);
 
-        Box box2 = new Box(35,17,27);
+        Box box2 = new Box(35, 17, 27);
         warehouse.addBox(box2);
 
-        Box box3= new Box(30,20,25, Material.CARDBOARD);
+        Box box3 = new Box(30, 20, 25, Material.CARDBOARD);
         warehouse.addBox(box3);
+
+        Box box4 = new Box();
+        box4.setHeight(24);
+        box4.setMaterial(Material.CARDBOARD);
+        warehouse.addBox(box4);
 
         ColorBox colorBox = new ColorBox();
         warehouse.addBox(colorBox);
@@ -38,7 +44,7 @@ public class TestBox {
         ColorBox colorBox6 = new ColorBox(45, 20, 10, Color.ORANGE);
         warehouse.addBox(colorBox6);
 
-        ColorBox colorBox7 = new ColorBox(10, 20, 10, Material.IRON , Color.ORANGE);
+        ColorBox colorBox7 = new ColorBox(10, 20, 10, Material.IRON, Color.ORANGE);
         warehouse.addBox(colorBox7);
 
         ColorBox colorBox8 = new ColorBox();
@@ -46,7 +52,12 @@ public class TestBox {
         colorBox8.setMaterial(Material.IRON);
         warehouse.addBox(colorBox8);
 
+        ColorBox colorBox9 = new ColorBox();
+        colorBox9.setLength(25);
+        warehouse.addBox(colorBox9);
+
         System.out.println(warehouse);
 
+        warehouse.addBox(colorBox9); //warehouse is full
     }
 }

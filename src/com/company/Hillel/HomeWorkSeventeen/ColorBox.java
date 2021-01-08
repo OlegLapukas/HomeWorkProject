@@ -1,6 +1,7 @@
 package com.company.Hillel.HomeWorkSeventeen;
 
 public class ColorBox extends Box {
+
     private Color color = Color.GREY; //default color
 
     public ColorBox() {

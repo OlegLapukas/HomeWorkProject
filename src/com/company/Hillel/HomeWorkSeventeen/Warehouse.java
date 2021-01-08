@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Warehouse {
 
-    private final String line = "Объём коробки равен = %.4f м³.%n";
+    private static final String line = "Объём коробки равен = %.4f м³.%n";
+
     Box[] boxes;
     private int count = 0;
 
@@ -23,11 +24,14 @@ public class Warehouse {
 
     @Override
     public String toString() {
+        if (count == 0) {
+            return "Склад пуст!\n";
+        }
         StringBuilder sb = new StringBuilder("Содержимое склада:\n");
         for (int i = 0; i < boxes.length; i++) {
             if (boxes[i] != null) {
                 sb.append("Коробка хранится в ячейке:").append(i).append("\n");
-                sb.append(String.format("Объём коробки равен = %.4f м³.%n", boxes[i].volume()));
+                sb.append(String.format(line, boxes[i].volume()));
                 sb.append(boxes[i]).append("\n");
             }
         }
