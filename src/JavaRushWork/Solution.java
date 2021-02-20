@@ -3,7 +3,7 @@ package JavaRushWork;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Crossword {
+public class Solution {
     public static void main(String[] args) {
         int[][] crossword = new int[][]{
                 {'f', 'd', 'e', 'r', 'l', 'k'},
